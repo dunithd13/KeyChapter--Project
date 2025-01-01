@@ -1,0 +1,251 @@
+
+<html>
+
+<head>
+   
+    <title>KeyChapter</title>
+    <style>
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #113293;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+
+        header h2 {
+            font-size: 22px;
+        }
+
+        /* Main Grid Styles */
+        .book-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .book {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(15, 15, 15, 0.1);
+            text-align: center;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+
+       /*
+        .book:hover {                      This Gives the little breathing animation to the book box > 
+            transform: translateY(-10px);
+        }
+       
+        */
+        
+        .book img {
+            width: 100%;
+            height: autofit;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .book-title a {
+            color: #1069c8;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .book-title a:hover {      /* This Shows a underline for book title when the curser is on the top */
+            text-decoration: underline;
+        }
+
+        .author {
+            color: #393939;
+            font-size: 18px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: hsl(231, 75%, 33%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <header>
+        <h1>KeyChapter</h1>
+        <h2>Explore the World's Greatest Self-Help Books</h2>
+    </header>
+
+   
+    <main class="book-grid">
+        
+        <div class="book">
+            <img src="AtomicHabits.jpg" alt="Atomic Habits">
+            <p class="book-title"><a href="AtomicHabits.html">Atomic Habits</a></p>
+            <p class="author">by James Clear</p>
+        </div>
+
+       
+        <div class="book">
+            <img src="ThinkAnd.jpg" alt="Think and Grow Rich">
+            <p class="book-title"><a href="ThinkandGrow.html">Think and Grow Rich</a></p>
+            <p class="author">by Napolean Hill</p>
+        </div>
+
+        <!-- Book 3 -->
+        <div class="book">
+            <img src="RichDad.jpg" alt="Rich Dad Poor Dad">
+            <p class="book-title"><a href="RichDadPoorDad.html">Rich Dad Poor Dad</a></p>
+            <p class="author">by Robert Kiyosaki</p>
+        </div>
+
+        <!-- Book 4 -->
+        <div class="book">
+            <img src="7Habits.jpg" alt="The 7 Habits of Highly Effective People">
+            <p class="book-title"><a href="the-7-habits.html">The 7 Habits of Highly Effective People</a></p>
+            <p class="author">by Stephen Covey</p>
+        </div>
+
+        <div class="book">
+            <img src="TheAlchemist.jpg" alt="The Alchemist">
+            <p class="book-title"><a href="the-7-habits.html">The Alchemist</a></p>
+            <p class="author"> by Paulo Coelho</p>
+        </div>
+
+        <div class="book">
+            <img src="ArtofWar.jpg" alt="The Art of War">
+            <p class="book-title"><a href="ArtofWar.html">The Art of War</a></p>
+            <p class="author"> by Sun Tzu</p>
+        </div>
+
+        <div class="book">
+            <img src="PsychologyofMoney.jpg" alt="The Psychology of Money">
+            <p class="book-title"><a href="psycho.html">The Psychology of Money</a></p>
+            <p class="author"> by Morgan Housel </p>
+        </div>
+
+        <div class="book">
+            <img src="MenFromMars.jpg" alt="Men Are from Mars, Women Are from Venus">
+            <p class="book-title"><a href="MenFrom.html">Men Are from Mars, Women Are from Venus</a></p>
+            <p class="author"> by John Gray </p>
+        </div>
+
+        <div class="book">
+            <img src="Medi.jpg" alt="Meditations">
+            <p class="book-title"><a href="Meditations.html">Meditations</a></p>
+            <p class="author"> by Marcus Aurelius</p>
+        </div>
+
+        <div class="book">
+            <img src="DeepWork.jpg" alt="Deep Work">
+            <p class="book-title"><a href="DeepWork.html">Deep Work</a></p>
+            <p class="author"> by Cal Newport </p>
+        </div>
+
+        <div class="book">
+            <img src="HowToTalk.jpg" alt="How To Talk To Anyone">
+            <p class="book-title"><a href="HowtoTalk.html">How To Talk To Anyone</a></p>
+            <p class="author"> by Leil Lowndes </p>
+        </div>
+
+        <div class="book">
+            <img src="The48Laws.jpg" alt="The 48 Laws of Power">
+            <p class="book-title"><a href="48Laws.html">The 48 Laws of Power</a></p>
+            <p class="author"> by Robert Greene </p>
+        </div>
+
+        <div class="book">
+            <img src="HowtoWin.yWZY3Fbr7h8VBYZScIGouky6nvsb03y6FzGZFrw2M36wFcQWTwvOHsIKg--" alt="How to Win Friends and Influence People">
+            <p class="book-title"><a href=".html">How to Win Friends and Influence People</a></p>
+            <p class="author"> by Dale Carnigie </p>
+        </div>
+
+        <div class="book">
+            <img src="TheMonkWho.jpg" alt="The Monk Who Sold His Ferrari">
+            <p class="book-title"><a href=".html">The Monk Who Sold His Ferrari</a></p>
+            <p class="author"> by Robin Sharma </p>
+        </div>
+
+        <div class="book">
+            <img src="ShoeDog.webp" alt="Shoe Dog">
+            <p class="book-title"><a href="ShoeDog.html">Shoe Dog</a></p>
+            <p class="author"> by Phil Knight </p>
+        </div>
+
+        <div class="book">
+            <img src="PowerOfNow.jpg" alt="The Power Of Now">
+            <p class="book-title"><a href=".html">The Power Of Now</a></p>
+            <p class="author"> by Eckhart Tolle </p>
+        </div>
+
+        <div class="book">
+            <img src="ThinkLike.jpg" alt="Think Like A Monk">
+            <p class="book-title"><a href=".html">Think Like A Monk</a></p>
+            <p class="author"> by Jay Shetty </p>
+        </div>
+
+        <div class="book">
+            <img src="Steve.jpg" alt="Steve Jobs">
+            <p class="book-title"><a href="Steve.html">Steve Jobs</a></p>
+            <p class="author"> by Walter Isaacson </p>
+        </div>
+
+        <div class="book">
+            <img src="5AMClub.avif" alt="The 5AM Club">
+            <p class="book-title"><a href=".html">The 5AM Club</a></p>
+            <p class="author"> by Robin Sharma </p>
+        </div>
+
+        <div class="book">
+            <img src="Saphiens.jpg" alt="Sapiens: A Brief History of Humankind">
+            <p class="book-title"><a href=".html">Sapiens: A Brief History of Humankind</a></p>
+            <p class="author"> by Yuval Noah Harari
+            </p>
+        </div>
+
+
+        
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 KeyChapter by Dunith Desitha Ranawansha. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
